@@ -30,6 +30,17 @@
             "mainClass": "com.pablotelles.carservice.CarServiceApplication",
             "projectName": "car-service",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=55759 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=car-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-UserServiceApplication<user-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pablotelles.userservice.UserServiceApplication",
+            "projectName": "user-service",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]
