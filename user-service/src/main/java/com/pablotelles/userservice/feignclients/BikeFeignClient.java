@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.pablotelles.userservice.models.Bike;
 
-@FeignClient(name = "bike-service", url = "http://localhost:8003/api/v1/bikes")
+@FeignClient(name = "bike-service")
 public interface BikeFeignClient {
     
     @PostMapping("/create")

@@ -79,7 +79,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public List<Car> getCars(Long userId) {
         log.info("Fetching car for the user: {}", userId);
-        List<Car> cars = restTemplate.getForObject("http://localhost:8002/api/v1/cars/userid/"+userId, List.class);
+        List<Car> cars = restTemplate.getForObject("http://car-service/api/v1/cars/userid/"+userId, List.class);
         return cars;
     }
 
@@ -88,7 +88,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public List<Bike> getBikes(Long userId) {
         log.info("Fetching by userId: {}", userId);
-        List<Bike> bikes = restTemplate.getForObject("http://localhost:8003/api/v1/bikes/userId/"+userId, List.class);
+        List<Bike> bikes = restTemplate.getForObject("http://bike-service/api/v1/bikes/userId/"+userId, List.class);
         return bikes;
     }
 
