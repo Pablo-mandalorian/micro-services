@@ -6,7 +6,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-//Agregar OpenFeign Al pom y despues agregar @enable.... al main 
 @EnableFeignClients
 @EnableDiscoveryClient
 public class UserServiceApplication {

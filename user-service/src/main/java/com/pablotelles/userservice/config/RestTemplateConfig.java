@@ -8,8 +8,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class RestTemplateConfig {
     
-    //1.
-    @Bean //Para poder injectarlo
+    @Bean 
     @LoadBalanced
     public RestTemplate restTemplate(){
         return new RestTemplate();
