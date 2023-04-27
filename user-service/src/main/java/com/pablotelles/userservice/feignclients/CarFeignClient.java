@@ -14,10 +14,10 @@ import com.pablotelles.userservice.models.Car;
 @FeignClient(name = "car-service")
 public interface CarFeignClient {
     
-    @PostMapping("/create")
+    @PostMapping("/api/v1/cars/create")
     public Car createCar(@RequestBody Car car);
 
-    @GetMapping("/userid/{id}")
+    @GetMapping("/api/v1/cars/userid/{id}")
     public List<Car> getCarByUserId(@PathVariable("id") Long id);
 
 }

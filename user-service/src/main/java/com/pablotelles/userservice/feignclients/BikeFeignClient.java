@@ -13,10 +13,10 @@ import com.pablotelles.userservice.models.Bike;
 @FeignClient(name = "bike-service")
 public interface BikeFeignClient {
     
-    @PostMapping("/create")
+    @PostMapping("/api/v1/bikes/create")
     public Bike createBike(@RequestBody Bike bike);
 
-    @GetMapping("/userid/{id}")
+    @GetMapping("/api/v1/bikes/userid/{id}")
     public List<Bike> getBikeByUserId(@PathVariable("id") Long id);
 
 }
