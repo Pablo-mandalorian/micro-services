@@ -51,6 +51,17 @@
             "mainClass": "com.pablotelles.eurekaservice.EurekaServiceApplication",
             "projectName": "eureka-service",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53219 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eureka-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pablotelles.apigateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]
