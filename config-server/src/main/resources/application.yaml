@@ -5,7 +5,7 @@ spring:
         config:
             server:
                 git: 
-                  default-label: zipkin-sleuth
+                  default-label: keycloack
                   uri: https://github.com/Pablo-mandalorian/micro-services
                   search-paths: config-data
     application:
